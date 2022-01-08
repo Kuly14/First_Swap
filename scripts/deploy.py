@@ -3,11 +3,8 @@ from scripts.help import get_account
 from web3 import Web3
 
 
-
 KEPT_BALANCE = Web3.toWei(150, "ether")
 amounts = Web3.toWei(10, "ether")
-
-
 
 
 def deploy():
