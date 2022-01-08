@@ -25,20 +25,6 @@ def approve_erc20(amount, spender, erc20_address, account):
     print("Approved!")
     return tx
 
-# def start_swap():
-# 	print("Starting Swap!")
-# 	account = get_account()
-# 	swap = Swap[-1]
-# 	weth_address = config["networks"][network.show_active()]["weth_token"]
-# 	dao_address = config["networks"][network.show_active()]["dao_token"]
-# 	amountToSend = Web3.toWei(0.1, "ether")
-# 	approve_tx = approve_erc20(amounts, swap.address, erc20_address, account)
-# 	approve_tx2 = approve_erc20()
-# 	tx = swap.StartSwap(amountToSend, {"from": account})
-# 	tx.wait(1)
-# 	print("Swap started!")
-
-
 
 def start_swap():
 	account = get_account()
@@ -79,10 +65,6 @@ def swap():
 	tx = swap.swap(weth_address, dao_address, amountToSendWeth, {"from": account})
 	tx.wait(1)
 	print("SWAP SUCCESFULL!!!")
-
-
-
-
 
 
 def showBalance():
